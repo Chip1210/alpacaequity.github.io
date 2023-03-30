@@ -41,7 +41,7 @@ body{
 }
 
 input, textarea {
-    width: 60%;
+    width: 100%;
     padding: 1em;
     font-size: 16px;
     font-family: 'Space Grotesk', sans-serif;
