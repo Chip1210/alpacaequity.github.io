@@ -1,0 +1,217 @@
+body, html{
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  touch-action: manipulation;
+  height: 100%;
+  background: #150E12;
+  font-size: 100%; /*16px*/
+}   
+img {
+  width: 100%;
+  border-radius: 8px;
+}
+video {
+  border-radius: 8px; 
+  -o-object-fit: cover; 
+  object-fit: cover; 
+  max-height: 600px;
+  background-size: cover;
+  background-position: 50% 50%;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  right: -100%;
+  bottom: -100%;
+  top: -100%;
+  left: -100%;
+  object-fit: cover;
+  z-index: -100;
+}
+::selection {
+  background: hsl(0 0% 0%/0.071);
+}
+body{
+  display: flex;
+  flex-direction: column;
+  max-width: 640px;
+  line-height: 1.8;
+  margin: auto;
+  font-family: 'Space Grotesk', -apple-system,"BlinkMacSystemFont","Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1em;
+    font-size: 16px;
+    font-family: 'Space Grotesk', sans-serif;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+}
+p {
+  margin-bottom: 1rem;
+  color: #D0D0DA;  
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: 'Space Grotesk', sans-serif;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {font-size: 2.441rem;}
+
+h3 {font-size: 1.953rem;}
+
+h4 {font-size: 1.563rem;}
+
+h5 {font-size: 1.25rem;}
+
+small, .text_small {font-size: 0.8rem; color: #D0D0DA;}
+.center {
+    text-align: center;
+}
+.fade-in {
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 10s;
+    -moz-animation: fadeIn ease 10s;
+    -o-animation: fadeIn ease 10s;
+    -ms-animation: fadeIn ease 10s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+sup {
+  line-height: 0;
+}
+blockquote {
+  padding: 0 1em;
+  border-left: 0.25em solid #dfe2e5;
+  font-size: larger;
+  margin-inline-start: 0;
+}  
+body#theme blockquote {
+  color: #6a737d;
+}
+ol {
+  margin-left: 0.3em;
+}
+b
+strong{
+  font-weight: bolder;
+}
+.content {
+  flex: 1 0 auto;
+  padding: 1em;
+  padding-bottom: 5em;
+}
+
+a {
+  color: inherit;
+  text-decoration-color: #c7c7c7;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 1.5px;
+}
+a:hover, .blog-title:hover {
+  color: rgba(23,23,23,.6) !important;
+  text-decoration-color: rgba(23,23,23,.15);
+  transition: border-color .15s ease-out,color .15s ease-out;
+}
+.logo a {
+  text-decoration: none;
+}
+body#theme hr {
+  width: 100%;
+  border-color: rgba(23,23,23,.15);
+}
+/*Glowing button starts*/
+:root {
+    --btn-border: 1px solid rgba(255, 255, 255, 0.2);
+    --btn-bg: transparent;
+    --btn-shadow: 1px 1px 25px 10px rgba(255, 255, 255, 0.5);
+    --btn-text-color: #f4f4f4;
+    --shine-degree: 120deg;
+    --shine-color: rgba(255, 255, 255, 0.2);
+    --shine-effect: linear-gradient(
+      var(--shine-degree),
+      transparent,
+      var(--shine-color),
+      transparent
+    );
+    --shine-transition: all 0.65s ease-in-out;
+  }
+  .btn {
+    position: relative;
+    overflow: hidden;
+    font-size: 1.1rem;
+    padding: 1rem 3rem;
+    border-radius: 4px;
+    text-decoration: none;
+    border: var(--btn-border);
+    color: var(--btn-text-color);
+    background: var(--btn-bg);
+  }
+  .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--shine-effect);
+  }  
+  .btn:hover, .btn:focus {
+    background: radial-gradient(100% 100% at 35% 100%,#DB3ADB 0%,rgb(20, 14, 18) 100%); 
+  }
+.btn-anim::before {
+    -webkit-animation: shine 5s ease-in-out infinite;
+            animation: shine 5s ease-in-out infinite;
+  }
+  @-webkit-keyframes shine {
+    0% {
+      left: -100%;
+      transition-property: left;
+    }
+    11.5044247788%, 100% {
+      left: 100%;
+      transition-property: left;
+    }
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -100%;
+      transition-property: left;
+    }
+    11.5044247788%, 100% {
+      left: 100%;
+      transition-property: left;
+    }
+  }
