@@ -47,6 +47,7 @@ input, textarea {
     font-family: 'Space Grotesk', sans-serif;
     margin-top: 0.2em;
     margin-bottom: 1em;
+    background: #16161B;
 }
 p {
   margin-bottom: 1rem;
